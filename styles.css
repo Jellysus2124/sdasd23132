@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #ffe6e6;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff0f5;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#main-text {
+  font-size: 2.5rem;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+#yes-btn {
+  background-color: #ff9aa2;
+  color: white;
+  box-shadow: 0 4px 8px rgba(255, 154, 162, 0.5);
+}
+
+#yes-btn:hover {
+  background-color: #ff6b6b;
+}
+
+#no-btn {
+  background-color: #f67280;
+  color: white;
+  box-shadow: 0 4px 8px rgba(246, 114, 128, 0.5);
+}
+
+#no-btn:hover {
+  background-color: #ff6b6b;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: #f67280;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #main-text {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 10px 18px;
+  }
+}
